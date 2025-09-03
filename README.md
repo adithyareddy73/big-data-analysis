@@ -2,13 +2,14 @@
 
 ## Dataset
 - Source: Kaggle
-- Format: Excel (.xlsx)
+- Format: CSV (converted from Excel)
 - Rows: 1,004,480
 - Columns: Date, Domain, Location, Value, Transaction_count
 
 ## Tools Used
 - Python
-- Pandas
+- Pandas (initial analysis)
+- Dask (scalable analysis)
 
 ## Analysis Performed
 - Grouped by Domain to find total transaction value and count
@@ -21,5 +22,6 @@
 - **Peak Month**: August 2022 (₹64.09B)
 
 ## Deliverables
-- `analysis.py`: Python script with full analysis
+- `analysis.py`: Pandas-based script
+- `dask_analysis.py`: Scalable Dask-based script
 - `README.md`: Summary of project and insights
